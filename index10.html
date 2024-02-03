@@ -1,0 +1,57 @@
+<!-- Properties and Method in Object -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties and Method in Object</title>
+</head>
+
+<body>
+    <h1>Hello World! Index 10</h1>
+    <script>
+    //    JavaScript is an object-based language
+    //    and in JavaScript almost everything is an object or acts like an object.
+    var personObj={
+        firstName:"Ritika",
+        lastName:"Singh",
+        age:20
+    };
+    console.log(personObj.firstName,personObj.lastName);
+
+    //OR
+    var personObj={
+        firstName:"Ritika",
+        lastName:"Singh",
+        age:20
+    };
+    //function1
+    function displayFirstname(){
+        console.log(personObj.firstname);
+    };
+    //function2
+    function displayFullname(){
+        console.log(personObj.firstName,personObj.lastName);
+    };
+    displayFullname();
+    
+    //OR-------PREFERED WAY--------->
+    var personObj={
+        firstName:"Ritika",
+        lastName:"Singh",
+        age:20,
+        displayFullName:function(){                  //displayFullName is 'Key' which is assigned a value i.e.'function'
+        console.log(this.firstName,this.lastName)    //& function is called 'Anonomus'.
+        }                                            // Keyword 'this' refers to the object       
+    };
+    personObj.displayFullName  //calling 'dispalyFullName; is called 'method'
+    console.log(personObj.firstName)
+
+    //array behaves as an Object 
+    var myArray=[9,6,2,4];
+    console.log(myArray) //print array elem
+    console.log(myArray.length)  //lenght of array
+    myArray.sort();  //sort array in ascending order
+    </script>
+</body>

@@ -1,0 +1,38 @@
+<!-- Function Data Type -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Data Type</title>
+</head>
+
+<body>
+    <h1>Hello World! Index 9</h1>
+    <script>
+       //Function is callable object that execute a block of code.
+       //Syntax: function_functionname (){} 
+
+       //Create Function
+       function printName(){
+        console.log("Ritika");//functionBody
+       }
+       printName();//functionCall
+
+       function printNameTwo(){
+        console.log("Tom");  
+       }
+       printNameTwo(); 
+
+       //Make function RE-Useable  -Syntax:function_functionname (parameter){}
+       function printName(firstName,lastName){
+        console.log(firstName,lastName);      //firstName,lastName:parameter
+       }
+       printName("Ram","Singh");
+       printName("Kartika","Ramakrishnan");   //Argument:Ram,Kartika
+
+       //Data type of function
+       console.log(typeof printName)
+    </script>
+</body>

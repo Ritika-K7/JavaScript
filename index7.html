@@ -1,0 +1,36 @@
+<!-- Object Data Type -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Data Type</title>
+</head>
+<body>
+    <h1>Hello World! Index 7</h1>
+    <script>
+      var name="Ritika"
+      var age=20;
+      var isMarried= false;
+      console.log(name,age,isMarried);
+
+      //Create object
+      var personObj={
+        name:"Ritika",
+        age:20,
+        isMarried:false  //name,age,isMarried is property in the form 'key:value 'pair.
+      };
+      console.log(personObj);
+      //To print specific Key
+      console.log(personObj.name);
+      console.log(personObj.age);
+
+      //OR
+      var personObj={
+        "name":"Ritika", //writing key:value pair in inverted quots.
+        "age":20,
+        "isMarried":false 
+      };
+
+    </script>  
+</body>
